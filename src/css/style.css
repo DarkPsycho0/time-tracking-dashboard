@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap');
+
+body {
+    font-family: 'Rubik', sans-serif;
+    font-size: 18px;
+    background-color: hsl(226, 43%, 10%);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-template-rows: repeat(2, auto);
+    gap: 30px;
+}
+
+.profile {
+    grid-column: 1 / 1;
+    grid-row: 1 / span 2;
+    background-color: hsl(235, 46%, 20%);
+    border-radius: 15px;
+    width: 255px;
+}
+
+.profile .profile-data {
+    background-color: hsl(246, 80%, 60%);
+    padding: 32px 28px;
+    border-radius: 15px;
+    height: 355px;
+}
+
+.profile-data img {
+    width: 85px;
+    border: 3px solid #FFFFFF;
+    border-radius: 50%;
+    margin-bottom: 34px;
+}
+
+.report,
+.profile-name {
+    margin-left: 4px;
+}
+
+.report {
+    font-size: 16px;
+    font-weight: 300;
+    color: hsl(236, 100%, 87%);
+    margin-bottom: 3px;
+}
+
+.profile-name {
+    font-size: 40px;
+    font-weight: 300;
+    color: hsl(0, 0%, 100%);
+}
+
+.profile ul {
+    padding: 27px 32px;
+    height: 165px;
+    display: flex;
+    flex-direction: column;
+}
+
+.profile ul li {
+    margin-bottom: 20px;
+    color: hsl(236, 100%, 87%);
+    align-self: flex-start;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.profile ul li:hover {
+    color: #FFFFFF;
+}
+
+.background,
+.card {
+    border-radius: 15px;
+}
+
+.card{
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+
+.background {
+    width: 255px;
+    height: 245px;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.work,
+.play,
+.study,
+.exercise,
+.social,
+.self-care {
+    background-repeat: no-repeat;
+    background-position: 90% -2%;
+}
+
+.work {
+    background-color: hsl(15, 100%, 70%);
+    background-image: url(../images/icon-work.svg);
+}
+
+.play {
+    background-color: hsl(195, 74%, 62%);
+    background-image: url(../images/icon-play.svg);
+}
+
+.study {
+    background-color: hsl(348, 100%, 68%);
+    background-image: url(../images/icon-study.svg);
+}
+
+.exercise {
+    background-color: hsl(145, 58%, 55%);
+    background-image: url(../images/icon-exercise.svg);
+}
+
+.social {
+    background-color: hsl(264, 64%, 52%);
+    background-image: url(../images/icon-social.svg);
+}
+
+.self-care {
+    background-color: hsl(43, 84%, 65%);
+    background-image: url(../images/icon-self-care.svg);
+}
+
+.card {
+    height: 81%;
+    background-color: hsl(235, 46%, 20%);
+    padding: 30px;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.card:hover {
+    background-color: hsl(234, 40%, 32%);
+}
+
+.card ul {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 24px;
+}
+
+.card ul li:first-child {
+    color: #FFFFFF;
+    font-weight: 500;
+}
+
+.card ul li:last-child {
+    color: hsl(236, 100%, 87%);
+    font-size: 26px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.card ul li:last-child:hover {
+    color: #FFFFFF;
+}
+
+
+.card .time {
+    font-size: 55px;
+    margin-bottom: 7px;
+    color: #FFFFFF;
+}
+
+.card .previous {
+    color: hsl(236, 100%, 87%);
+    font-size: 16px;
+}
